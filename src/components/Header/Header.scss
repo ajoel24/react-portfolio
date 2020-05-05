@@ -21,8 +21,12 @@
     list-style: none;
 
     & li {
-      margin: 0 1rem;
-      padding: 1rem 0;
+      padding: 1rem;
+
+      &:hover {
+        border-bottom: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
     }
   }
 }

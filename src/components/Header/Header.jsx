@@ -1,26 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Links from './Links/Links';
+import NavButton from './NavButton/NavButton';
 import './Header.css';
 
 const Header = () => {
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  window.addEventListener('resize', () => setScreenSize(window.innerWidth));
+
   return (
     <header>
       <nav className={'nav'}>
-        <div className={'nav-logo'}>Andrew Joel</div>
+        <div className={'nav-logo'}>
+          <a href="/">Andrew Joel</a>
+        </div>
         <div>
-          <ul className={'nav-links'}>
-            <li>
-              <a href="/">About</a>
-            </li>
-            <li>
-              <a href="/">Skills</a>
-            </li>
-            <li>
-              <a href="/">Portfolio</a>
-            </li>
-            <li>
-              <a href="/">Contact Me</a>
-            </li>
-          </ul>
+          {screenSize > '600' ? (
+            <ul className={'nav-links'}>
+              <Links />
+            </ul>
+          ) : (
+            <NavButton />
+          )}
         </div>
       </nav>
     </header>

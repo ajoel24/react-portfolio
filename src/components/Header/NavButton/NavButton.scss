@@ -1,0 +1,45 @@
+.nav-button {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &-line {
+    position: relative;
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    &:before,
+    &:after {
+      position: absolute;
+      top: -0.75rem;
+      content: '';
+      width: 2rem;
+      height: 0.3rem;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+
+    &:after {
+      top: 0.75rem;
+    }
+
+    &.show:before,
+    &.show:after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    &.show {
+      transform: rotate(225deg);
+    }
+  }
+}
