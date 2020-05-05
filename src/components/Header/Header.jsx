@@ -5,13 +5,21 @@ const Header = () => {
   return (
     <header>
       <nav className={'nav'}>
-        <div className={'logo'}>Andrew Joel</div>
+        <div className={'nav-logo'}>Andrew Joel</div>
         <div>
-          <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact Me</li>
+          <ul className={'nav-links'}>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Skills</a>
+            </li>
+            <li>
+              <a href="/">Portfolio</a>
+            </li>
+            <li>
+              <a href="/">Contact Me</a>
+            </li>
           </ul>
         </div>
       </nav>
