@@ -15,6 +15,7 @@
     "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --output-style compressed",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
+    "build-js": "react-scripts build",
     "start-js": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
