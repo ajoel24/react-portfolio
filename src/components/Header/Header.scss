@@ -3,11 +3,37 @@
   flex-flow: row wrap;
   justify-content: space-between;
   position: fixed;
-  color: #fff;
-  background-color: rgba(0, 0, 255, 0.9);
+  background-color: transparent;
   top: 0;
   left: 0;
   right: 0;
+
+  & a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #fff;
+  }
+
+  &-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    z-index: 2;
+  }
+}
+
+.nav.show {
+  background-color: #fff;
+
+  & a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #00f;
+  }
 
   &-logo {
     font-size: 1.5rem;
