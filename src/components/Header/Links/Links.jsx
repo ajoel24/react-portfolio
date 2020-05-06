@@ -4,13 +4,13 @@ export default function Links() {
   return (
     <Fragment>
       <li>
-        <a href="/">About</a>
+        <a href="/">Portfolio</a>
       </li>
       <li>
         <a href="/">Skills</a>
       </li>
       <li>
-        <a href="/">Portfolio</a>
+        <a href="/">About</a>
       </li>
       <li>
         <a href="/">Contact Me</a>
