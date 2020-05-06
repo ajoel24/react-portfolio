@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import Links from '../Links/Links';
-import './NavButton.css';
 
-export default function NavButton() {
+export default function NavButton(props) {
   const [sideBar, setSideBar] = useState(false);
 
   function toggleSidebar() {
     setSideBar(!sideBar);
   }
   return (
-    <div className={'nav-wrap'}>
+    <div className={`nav-wrap ${props.scroll}`}>
       <div className={`nav-button`} onClick={toggleSidebar}>
         <span className={`nav-button-line ${sideBar && 'show'}`}></span>
       </div>

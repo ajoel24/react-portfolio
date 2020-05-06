@@ -31,7 +31,13 @@ const Header = () => {
         <div className={`nav-logo ${canChangeColor && 'show'}`}>
           <a href="/">Andrew Joel</a>
         </div>
-        <div>{screenSize > '600' ? <HeadLink /> : <NavButton />}</div>
+        <div>
+          {screenSize > '600' ? (
+            <HeadLink scroll={canChangeColor && 'scroll'} />
+          ) : (
+            <NavButton scroll={canChangeColor && 'scroll'} />
+          )}
+        </div>
       </nav>
     </header>
   );
