@@ -22,7 +22,10 @@ export default function Hero() {
           standards.
         </p>
         <br />
-        <button className={`btn btn-hero`}>See My Portfolio</button>
+        <button className={`btn btn-hero`}>
+          <i className={`fas fa-chevron-down fa-1x`} aria-hidden="true"></i>
+          See My Work
+        </button>
       </div>
     </section>
   );
