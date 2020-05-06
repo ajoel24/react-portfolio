@@ -7,6 +7,7 @@ export default function Avatar(props) {
     objectFit: 'cover',
     width: props.width,
     height: props.height,
+    margin: '1rem 0',
   };
   return <img src={props.src} alt={props.alt} style={style} />;
 }
