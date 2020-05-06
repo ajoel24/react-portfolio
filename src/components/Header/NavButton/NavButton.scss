@@ -73,7 +73,7 @@
   }
 
   &-inner {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 255, 0.4);
     border-radius: 1rem;
     width: 98vw;
     height: 98vh;
@@ -102,7 +102,11 @@
         font-size: 1.5rem;
 
         li {
-          padding: 2rem;
+          padding: 1rem;
+          &:hover {
+            border-bottom: 2px solid #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+          }
         }
       }
 
