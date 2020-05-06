@@ -14,19 +14,4 @@
     font-weight: 700;
     padding: 1rem;
   }
-
-  &-links {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-
-    & li {
-      padding: 1rem;
-
-      &:hover {
-        border-bottom: 2px solid #fff;
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-    }
-  }
 }

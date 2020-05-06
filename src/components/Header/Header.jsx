@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Links from './Links/Links';
 import NavButton from './NavButton/NavButton';
+import HeadLink from './HeadLink/HeadLink';
 import './Header.css';
 
 const Header = () => {
@@ -13,15 +13,7 @@ const Header = () => {
         <div className={'nav-logo'}>
           <a href="/">Andrew Joel</a>
         </div>
-        <div>
-          {screenSize > '600' ? (
-            <ul className={'nav-links'}>
-              <Links />
-            </ul>
-          ) : (
-            <NavButton />
-          )}
-        </div>
+        <div>{screenSize > '600' ? <HeadLink /> : <NavButton />}</div>
       </nav>
     </header>
   );
