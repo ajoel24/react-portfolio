@@ -17,7 +17,6 @@ const Header = () => {
     );
 
   useEffect(() => {
-    console.log(scrollHeight);
     if (scrollHeight >= 500) {
       setCanChangeColor(true);
     } else {
