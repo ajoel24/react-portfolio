@@ -13,5 +13,19 @@
   &-content {
     padding: 5rem;
     height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 }
