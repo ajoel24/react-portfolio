@@ -5,7 +5,7 @@ import './Portfolio.css';
 
 export default function Portfolio() {
   return (
-    <section className={'portfolio'}>
+    <section className={'portfolio'} id="portfolio">
       <h2 className={'portfolio-title'}>My Completed Projects</h2>
       <div className={'portfolio-container'}>
         <Work

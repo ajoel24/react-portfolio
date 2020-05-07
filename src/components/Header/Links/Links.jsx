@@ -1,10 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
 
 export default function Links() {
   return (
-    <Fragment>
+    <>
       <li>
-        <a href="/">Portfolio</a>
+        <ScrollIntoView selector="#portfolio">
+          <a href="#portfolio">Portfolio</a>
+        </ScrollIntoView>
       </li>
       <li>
         <a href="/">Skills</a>
@@ -15,6 +18,6 @@ export default function Links() {
       <li>
         <a href="/">Contact Me</a>
       </li>
-    </Fragment>
+    </>
   );
 }

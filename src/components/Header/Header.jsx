@@ -3,7 +3,7 @@ import NavButton from './NavButton/NavButton';
 import HeadLink from './HeadLink/HeadLink';
 import './Header.scss';
 
-const Header = () => {
+const Header = (props) => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const [scrollHeight, setScrollHeight] = useState(
     document.documentElement.scrollTop || document.body.scrollTop
