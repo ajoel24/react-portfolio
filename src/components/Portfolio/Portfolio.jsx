@@ -1,19 +1,41 @@
 import React from 'react';
 import quizImage from '../../images/portfolio/quiz-project.jpg';
+import Work from './Work/Work';
 import './Portfolio.css';
 
 export default function Portfolio() {
   return (
     <section className={'portfolio'}>
-      <h2 className={'portfolio-title'}>My Projects</h2>
+      <h2 className={'portfolio-title'}>My Completed Projects</h2>
       <div className={'portfolio-container'}>
-        <div className={'portfolio-work'}>
-          <h4>Quiz App</h4>
-          <img src={quizImage} alt="Quiz Project"></img>
-          <h5>
-            A simple quiz application built using Ajax and OpenTriviaDB API
-          </h5>
-        </div>
+        <Work
+          title="Quiz Project"
+          image={quizImage}
+          link="https://quizproject.netlify.app"
+          alt="Quiz Project"
+          desc="A simple quiz project developed using ES6 JS and OpenTriviaDB API"
+        />
+        <Work
+          title="Quiz Project"
+          image={quizImage}
+          link="https://quizproject.netlify.app"
+          alt="Quiz Project"
+          desc="A simple quiz project developed using ES6 JS and OpenTriviaDB API"
+        />
+        <Work
+          title="Quiz Project"
+          image={quizImage}
+          link="https://quizproject.netlify.app"
+          alt="Quiz Project"
+          desc="A simple quiz project developed using ES6 JS and OpenTriviaDB API"
+        />
+        <Work
+          title="Quiz Project"
+          image={quizImage}
+          link="https://quizproject.netlify.app"
+          alt="Quiz Project"
+          desc="A simple quiz project developed using ES6 JS and OpenTriviaDB API"
+        />
       </div>
     </section>
   );
