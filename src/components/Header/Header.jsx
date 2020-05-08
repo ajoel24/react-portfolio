@@ -39,7 +39,9 @@ const Header = (props) => {
         className={`nav ${canChangeColor && 'show'} ${canHideNavbar && 'hide'}`}
       >
         <div className={`nav-logo ${canChangeColor && 'show'}`}>
-          <a href="/">Andrew Joel</a>
+          <a href="/">
+            <i className={`fas fa-code fa-1x`}></i>
+          </a>
         </div>
         <div>
           {screenSize > '600' ? (
