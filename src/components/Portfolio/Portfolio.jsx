@@ -24,6 +24,10 @@ export default function Portfolio() {
       <div className={'portfolio-container'}>
         {portfolioData.map(createWork)}
       </div>
+      <h2 className={'portfolio-title'}>My Ongoing Projects</h2>
+      <div className={'portfolio-container'}>
+        {portfolioData.map(createWork)}
+      </div>
     </section>
   );
 }
