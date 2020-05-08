@@ -14,6 +14,7 @@ export default function Hero() {
           alt="Andrew Joel profile"
           width="200px"
           height="200px"
+          borderColor="#fff"
         />
 
         <p>

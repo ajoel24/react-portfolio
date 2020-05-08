@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Portfolio from '../Portfolio/Portfolio';
+import Skills from '../Skills/Skills';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Hero />
         <Portfolio />
+        <Skills />
       </main>
     </>
   );
