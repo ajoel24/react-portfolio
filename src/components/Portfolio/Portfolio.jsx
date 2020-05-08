@@ -13,6 +13,7 @@ export default function Portfolio() {
         link={data.link}
         alt={data.alt}
         desc={data.desc}
+        sourceURL={data.sourceURL}
       />
     );
   }

@@ -10,6 +10,7 @@ const portfolioData = [
     alt: 'Quiz Project home page',
     desc:
       'A quiz project developed using ES6 JavaScript, Ajax and OpenTriviaDB API.',
+    sourceURL: 'https://github.com/Andrew2432/Quiz-API-Project',
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const portfolioData = [
     link: 'https://budgetsmart.netlify.app/',
     alt: 'Budget Smart home page',
     desc: 'An expense tracker project developed using ES6 JavaScript',
+    sourceURL: 'https://github.com/Andrew2432/BudgetSmart',
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ const portfolioData = [
     alt: 'Quiz Project',
     desc:
       'A quiz project developed using ES6 JavaScript, Ajax and OpenTriviaDB API.',
+    sourceURL: 'https://github.com/Andrew2432/Quiz-API-Project',
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const portfolioData = [
     alt: 'Quiz Project',
     desc:
       'A quiz project developed using ES6 JavaScript, Ajax and OpenTriviaDB API.',
+    sourceURL: 'https://github.com/Andrew2432/Quiz-API-Project',
   },
 ];
 
