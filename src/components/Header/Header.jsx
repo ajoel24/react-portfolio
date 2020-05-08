@@ -9,12 +9,21 @@ const Header = (props) => {
     document.documentElement.scrollTop || document.body.scrollTop
   );
   const [canChangeColor, setCanChangeColor] = useState(false);
+  const [prevScrollPos, setPreviousScrollPos] = useState(window.pageYOffset);
+  const [canHideNavbar, setCanHideNavbar] = useState(false);
 
   window.addEventListener('resize', () => setScreenSize(window.innerWidth));
-  window.onscroll = () =>
+  window.onscroll = () => {
     setScrollHeight(
       document.documentElement.scrollTop || document.body.scrollTop
     );
+    if (window.pageYOffset < prevScrollPos) {
+      setCanHideNavbar(false);
+    } else {
+      setCanHideNavbar(true);
+    }
+    setPreviousScrollPos(window.pageYOffset);
+  };
 
   useEffect(() => {
     if (scrollHeight >= 500) {
@@ -26,7 +35,9 @@ const Header = (props) => {
 
   return (
     <header>
-      <nav className={`nav ${canChangeColor && 'show'}`}>
+      <nav
+        className={`nav ${canChangeColor && 'show'} ${canHideNavbar && 'hide'}`}
+      >
         <div className={`nav-logo ${canChangeColor && 'show'}`}>
           <a href="/">Andrew Joel</a>
         </div>
@@ -34,7 +45,10 @@ const Header = (props) => {
           {screenSize > '600' ? (
             <HeadLink scroll={canChangeColor && 'scroll'} />
           ) : (
-            <NavButton scroll={canChangeColor && 'scroll'} />
+            <NavButton
+              scroll={canChangeColor && 'scroll'}
+              hide={canHideNavbar && 'hide'}
+            />
           )}
         </div>
       </nav>

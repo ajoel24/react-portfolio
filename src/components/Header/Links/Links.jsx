@@ -5,7 +5,7 @@ export default function Links() {
   return (
     <>
       <li>
-        <ScrollIntoView selector="#portfolio">
+        <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
           <a href="#portfolio">Portfolio</a>
         </ScrollIntoView>
       </li>

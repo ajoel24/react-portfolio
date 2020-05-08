@@ -7,9 +7,10 @@ export default function NavButton(props) {
   function toggleSidebar() {
     setSideBar(!sideBar);
   }
+
   return (
     <div className={`nav-wrap ${props.scroll}`}>
-      <div className={`nav-button`} onClick={toggleSidebar}>
+      <div className={`nav-button ${props.hide}`} onClick={toggleSidebar}>
         <span className={`nav-button-line ${sideBar && 'show'}`}></span>
       </div>
       <div
