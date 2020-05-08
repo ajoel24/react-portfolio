@@ -10,7 +10,9 @@ export default function Links() {
         </ScrollIntoView>
       </li>
       <li>
-        <a href="/">Skills</a>
+        <ScrollIntoView selector="#skills" alignToTop={true} smooth={true}>
+          <a href="#skills">Skills</a>
+        </ScrollIntoView>
       </li>
       <li>
         <a href="/">About</a>
