@@ -24,15 +24,11 @@ export default function Skills() {
       <div className={'skills-container'}>
         {skillsCore.map(createSkillItem)}
       </div>
-      <h2 className={'skills-basic-title'}>
-        Skills that are fundamental for my work
-      </h2>
+      <h2>Skills that are fundamental for my work</h2>
       <div className={'skills-container'}>
         {skillsBasic.map(createSkillItem)}
       </div>
-      <h2 className={'skills-languages-title'}>
-        I have university level experience with the following languages
-      </h2>
+      <h2>I have university level experience with the following languages</h2>
       <div className={'skills-container'}>
         {skillsLanguages.map(createSkillItem)}
       </div>
