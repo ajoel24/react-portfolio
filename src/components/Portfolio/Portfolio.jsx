@@ -1,5 +1,4 @@
 import React from 'react';
-// import quizImage from '../../images/portfolio/quiz-project.jpg';
 import Work from './Work/Work';
 import portfolioData from './portfolioData';
 import './Portfolio.css';
