@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
 import Avatar from '../Avatar/Avatar';
-import profileImage from '../../images/dp.jpg';
+import profileImage from '../../images/compressed/dp.webp';
 import './Hero.css';
 
 export default function Hero() {
