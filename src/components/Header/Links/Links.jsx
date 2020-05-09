@@ -15,7 +15,9 @@ export default function Links() {
         </ScrollIntoView>
       </li>
       <li>
-        <a href="/">About</a>
+        <ScrollIntoView selector="#about" alignToTop={true} smooth={true}>
+          <a href="#about">About</a>
+        </ScrollIntoView>
       </li>
       <li>
         <a href="/">Contact Me</a>

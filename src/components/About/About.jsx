@@ -13,7 +13,10 @@ export default function About() {
           <br />
           I was introduced to web development since my high school vacation and
           I am fascinated by it ever since. It took me 3 years to have a solid
-          knowledge in web development as an industry. <br />
+          knowledge in web development as an industry. I find the constant
+          evolution of web development makes me to be updated and pushes me to
+          level up my skills.
+          <br />
           <br />
           I have no experience of working as a web developer intern; though I
           look forward to it. I have intermediate knowledge in languages such as
