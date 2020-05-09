@@ -45,3 +45,18 @@
     color: #fff;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    min-height: 100vh;
+
+    &-content p {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-hero {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
