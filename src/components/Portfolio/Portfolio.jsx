@@ -1,6 +1,7 @@
 import React from 'react';
 import Work from './Work/Work';
-import portfolioData from './portfolioData';
+import portfolioCompletedData from './portfolioCompletedData';
+import portfolioOngoingData from './portfolioOngoingData';
 import './Portfolio.css';
 
 export default function Portfolio() {
@@ -22,11 +23,11 @@ export default function Portfolio() {
     <section className={'portfolio'} id="portfolio">
       <h2 className={'portfolio-title'}>My Completed Projects</h2>
       <div className={'portfolio-container'}>
-        {portfolioData.map(createWork)}
+        {portfolioCompletedData.map(createWork)}
       </div>
       <h2 className={'portfolio-title'}>My Ongoing Projects</h2>
       <div className={'portfolio-container'}>
-        {portfolioData.map(createWork)}
+        {portfolioOngoingData.map(createWork)}
       </div>
     </section>
   );

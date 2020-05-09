@@ -9,7 +9,7 @@ export default function Work(props) {
       </a>
       <h4>{props.desc}</h4>
       <h4>
-        Source Code:{' '}
+        Source Code:
         <a href={props.sourceURL} target="_blank" rel="noopener noreferrer">
           View In GitHub
         </a>
