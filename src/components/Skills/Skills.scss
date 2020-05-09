@@ -1,0 +1,32 @@
+.skills {
+  background-image: linear-gradient(to right, #c33764, #1d2671);
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+
+  &-title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+  }
+
+  &-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
