@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import Portfolio from '../Portfolio/Portfolio';
 import Skills from '../Skills/Skills';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
       <Portfolio />
       <Skills />
       <About />
+      <Contact />
     </main>
   );
 }
