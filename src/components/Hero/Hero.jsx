@@ -20,8 +20,7 @@ export default function Hero() {
         <p>
           I am a <strong>MERN Stack Web Developer</strong> from Chennai, India.
           I develop beautiful, robust websites by applying latest web
-          development skills. All of my projects are 100% compliant with web
-          standards.
+          development skills. My projects are compliant with web standards.
         </p>
 
         <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
