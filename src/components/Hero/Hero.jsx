@@ -26,7 +26,14 @@ export default function Hero() {
         <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
           <button className={`btn btn-hero`}>
             <i className={`fas fa-chevron-down fa-1x`} aria-hidden="true"></i>
-            See My Work
+            Sounds Good
+          </button>
+        </ScrollIntoView>
+
+        <ScrollIntoView selector="#contact" alignToTop={true} smooth={true}>
+          <button className={`btn btn-work`}>
+            <i className={`fas fa-code fa-1x`} aria-hidden="true"></i>
+            I'm available for work!
           </button>
         </ScrollIntoView>
       </div>

@@ -11,7 +11,7 @@
   background-position: center;
 
   &-content {
-    padding-top: 5rem;
+    padding-top: 4rem;
     height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -37,12 +37,23 @@
   background-color: #fff;
   color: #00f;
   cursor: pointer;
+  margin: 1rem 0;
   i {
     padding: 0.5rem;
   }
   &:hover {
     background-color: rgba(0, 0, 255, 0.4);
     color: #fff;
+  }
+}
+
+.btn-work {
+  border-radius: 1rem;
+  background-color: #5cb85c;
+  color: #fff;
+  cursor: pointer;
+  i {
+    padding: 0.5rem;
   }
 }
 
@@ -55,8 +66,9 @@
     }
   }
 
-  .btn-hero {
-    padding-bottom: 0.5rem;
+  .btn-hero,
+  .btn-work {
+    margin: 1rem 0;
     font-size: 1rem;
   }
 }
