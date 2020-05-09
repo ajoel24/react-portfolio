@@ -24,19 +24,31 @@ function Contact() {
           <h2>You can find me on:</h2>
           <ul>
             <li>
-              <a href="https://github.com/Andrew2432">
+              <a
+                href="https://github.com/Andrew2432"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className={`fab fa-github fa-2x`} aria-hidden="true"></i>
                 GitHub
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/andrew-joel-440a72152/">
+              <a
+                href="https://www.linkedin.com/in/andrew-joel-440a72152/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className={`fab fa-linkedin fa-2x`} aria-hidden="true"></i>
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://discordapp.com/users/502109398379003945">
+              <a
+                href="https://discordapp.com/users/502109398379003945"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className={`fab fa-discord fa-2x`} aria-hidden="true"></i>
                 Discord
               </a>
