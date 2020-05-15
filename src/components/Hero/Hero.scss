@@ -6,12 +6,12 @@
       rgba(0, 0, 255, 0.5),
       rgba(0, 0, 255, 0.5)
     ),
-    url('../../images/hero-2.jpg');
+    url('../../images/compressed/hero-2.webp');
   background-size: cover;
   background-position: center;
 
   &-content {
-    padding-top: 5rem;
+    padding-top: 4rem;
     height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -37,11 +37,38 @@
   background-color: #fff;
   color: #00f;
   cursor: pointer;
+  margin: 1rem 0;
   i {
     padding: 0.5rem;
   }
   &:hover {
     background-color: rgba(0, 0, 255, 0.4);
     color: #fff;
+  }
+}
+
+.btn-work {
+  border-radius: 1rem;
+  background-color: #5cb85c;
+  color: #fff;
+  cursor: pointer;
+  i {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    min-height: 100vh;
+
+    &-content p {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-hero,
+  .btn-work {
+    margin: 1rem 0;
+    font-size: 1rem;
   }
 }

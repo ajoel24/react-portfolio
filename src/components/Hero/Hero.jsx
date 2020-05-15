@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
 import Avatar from '../Avatar/Avatar';
-import profileImage from '../../images/dp.jpg';
+import profileImage from '../../images/compressed/dp.webp';
 import './Hero.css';
 
 export default function Hero() {
@@ -26,7 +26,14 @@ export default function Hero() {
         <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
           <button className={`btn btn-hero`}>
             <i className={`fas fa-chevron-down fa-1x`} aria-hidden="true"></i>
-            See My Work
+            Sounds Good
+          </button>
+        </ScrollIntoView>
+
+        <ScrollIntoView selector="#contact" alignToTop={true} smooth={true}>
+          <button className={`btn btn-work`}>
+            <i className={`fas fa-code fa-1x`} aria-hidden="true"></i>
+            I'm available for work!
           </button>
         </ScrollIntoView>
       </div>
