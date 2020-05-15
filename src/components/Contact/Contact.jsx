@@ -13,7 +13,7 @@ function Contact() {
             andrewjoel.work@gmail.com
           </h3>
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=andrewjoel046@gmail.com&su=Developer_role&body=Let_me_know_your_availability"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=andrewjoel.work@gmail.com&su=Developer_role&body=Let_me_know_your_availability"
             target="_blank"
             rel="noopener noreferrer"
           >
