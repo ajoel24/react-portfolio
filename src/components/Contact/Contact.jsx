@@ -10,7 +10,7 @@ function Contact() {
           <h2>My E-mail:</h2>
           <h3>
             <i className={`fas fa-envelope fa-1x`}></i>
-            andrewjoel046@gmail.com
+            andrewjoel.work@gmail.com
           </h3>
         </div>
         <div>
