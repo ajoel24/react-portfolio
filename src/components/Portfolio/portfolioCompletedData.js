@@ -1,7 +1,7 @@
-import quizProjectImage from '../../images/portfolio/quiz-project.jpg';
-import budgetSmartImage from '../../images/portfolio/budget-smart.png';
-import nodeBlogImage from '../../images/portfolio/node-blog.jpg';
-import emojiPediaImage from '../../images/portfolio/emoji-pedia.jpg';
+import quizProjectImage from '../../images/compressed/portfolio/quiz-project.webp';
+import budgetSmartImage from '../../images/compressed/portfolio/budget-smart.webp';
+import nodeBlogImage from '../../images/compressed/portfolio/node-blog.webp';
+import emojiPediaImage from '../../images/compressed/portfolio/emoji-pedia.webp';
 
 const portfolioCompletedData = [
   {

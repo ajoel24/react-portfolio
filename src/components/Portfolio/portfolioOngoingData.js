@@ -1,4 +1,4 @@
-import keepClone from '../../images/portfolio/keep-clone.jpg';
+import keepClone from '../../images/compressed/portfolio/keep-clone.webp';
 
 const portfolioOngoingData = [
   {

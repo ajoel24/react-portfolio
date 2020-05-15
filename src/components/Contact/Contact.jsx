@@ -12,6 +12,15 @@ function Contact() {
             <i className={`fas fa-envelope fa-1x`}></i>
             andrewjoel046@gmail.com
           </h3>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=andrewjoel046@gmail.com&su=Developer_role&body=Let_me_know_your_availability"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>
+              Open in Gmail directly <i class="fas fa-external-link-alt"></i>
+            </h3>
+          </a>
         </div>
         <div>
           <h2>My Phone Number:</h2>
