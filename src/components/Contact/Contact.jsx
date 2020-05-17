@@ -18,7 +18,8 @@ function Contact() {
             rel="noopener noreferrer"
           >
             <h3>
-              Open in Gmail directly <i class="fas fa-external-link-alt"></i>
+              Open in Gmail directly{' '}
+              <i className="fas fa-external-link-alt"></i>
             </h3>
           </a>
         </div>
