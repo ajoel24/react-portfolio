@@ -24,14 +24,14 @@ export default function Hero() {
         </p>
 
         <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
-          <button className={`btn btn-hero`}>
+          <button className={`btn-hero`}>
             <i className={`fas fa-chevron-down fa-1x`} aria-hidden="true"></i>
             Sounds Good
           </button>
         </ScrollIntoView>
 
         <ScrollIntoView selector="#contact" alignToTop={true} smooth={true}>
-          <button className={`btn btn-work`}>
+          <button className={`btn-work`}>
             <i className={`fas fa-code fa-1x`} aria-hidden="true"></i>
             I'm available for work!
           </button>

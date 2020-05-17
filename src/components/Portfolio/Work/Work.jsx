@@ -8,12 +8,21 @@ export default function Work(props) {
         <img src={`${props.image}`} alt={props.alt} />
       </a>
       <h4>{props.desc}</h4>
-      <h4>
-        Source Code:
-        <a href={props.sourceURL} target="_blank" rel="noopener noreferrer">
-          View In GitHub
+      <div className={'portfolio-work-action'}>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <button className={`btn-demo`}>
+            <i className={`far fa-play-circle`}></i>
+            Live Demo
+          </button>
         </a>
-      </h4>
+
+        <a href={props.sourceURL} target="_blank" rel="noopener noreferrer">
+          <button className={`btn-github`}>
+            <i className={`fab fa-github`}></i>
+            View in GitHub
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
