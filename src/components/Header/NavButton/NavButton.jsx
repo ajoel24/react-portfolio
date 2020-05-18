@@ -10,7 +10,10 @@ export default function NavButton(props) {
 
   return (
     <div className={`nav-wrap ${props.scroll}`}>
-      <div className={`nav-button ${props.hide}`} onClick={toggleSidebar}>
+      <div
+        className={`nav-button ${sideBar || props.hide}`}
+        onClick={toggleSidebar}
+      >
         <span className={`nav-button-line ${sideBar && 'show'}`}></span>
       </div>
       <div
