@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Links from '../Links/Links';
 
-export default function NavButton(props) {
+function NavButton(props) {
   const [sideBar, setSideBar] = useState(false);
 
   function toggleSidebar() {
@@ -31,3 +31,5 @@ export default function NavButton(props) {
     </div>
   );
 }
+
+export default NavButton;

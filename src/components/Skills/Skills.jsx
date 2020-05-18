@@ -5,7 +5,7 @@ import skillsBasic from './skillsBasic';
 import skillsLanguages from './skillsLanguages';
 import './Skills.css';
 
-export default function Skills() {
+function Skills() {
   function createSkillItem(data) {
     return (
       <SkillItem
@@ -35,3 +35,5 @@ export default function Skills() {
     </section>
   );
 }
+
+export default Skills;

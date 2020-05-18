@@ -3,7 +3,7 @@ import NavButton from './NavButton/NavButton';
 import HeadLink from './HeadLink/HeadLink';
 import './Header.scss';
 
-const Header = (props) => {
+function Header(props) {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const [scrollHeight, setScrollHeight] = useState(
     document.documentElement.scrollTop || document.body.scrollTop
@@ -13,6 +13,7 @@ const Header = (props) => {
   const [canHideNavbar, setCanHideNavbar] = useState(false);
 
   window.addEventListener('resize', () => setScreenSize(window.innerWidth));
+
   window.onscroll = () => {
     setScrollHeight(
       document.documentElement.scrollTop || document.body.scrollTop
@@ -23,6 +24,37 @@ const Header = (props) => {
       setCanHideNavbar(true);
     }
     setPreviousScrollPos(window.pageYOffset);
+
+    // Highlight nav link on scroll
+    let fromTop = window.scrollY;
+
+    document.querySelectorAll('nav ul li a').forEach((link) => {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add('current');
+      } else {
+        link.classList.remove('current');
+      }
+    });
+
+    document
+      .querySelectorAll('nav-sidebar-inner-inner show ul li')
+      .forEach((link) => {
+        let section = document.querySelector(link.hash);
+
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add('current');
+        } else {
+          link.classList.remove('current');
+        }
+      });
   };
 
   useEffect(() => {
@@ -56,6 +88,6 @@ const Header = (props) => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

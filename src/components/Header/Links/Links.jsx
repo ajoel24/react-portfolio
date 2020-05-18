@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
 
-export default function Links() {
+function Links() {
   return (
     <>
       <li>
@@ -27,3 +27,5 @@ export default function Links() {
     </>
   );
 }
+
+export default Links;

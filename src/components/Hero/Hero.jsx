@@ -4,7 +4,7 @@ import Avatar from '../Avatar/Avatar';
 import profileImage from '../../images/compressed/dp.webp';
 import './Hero.css';
 
-export default function Hero() {
+function Hero() {
   return (
     <section className={'hero'}>
       <div className={'container hero-content'}>
@@ -40,3 +40,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;

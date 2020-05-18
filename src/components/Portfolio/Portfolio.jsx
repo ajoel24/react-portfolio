@@ -4,7 +4,7 @@ import portfolioCompletedData from './portfolioCompletedData';
 import portfolioOngoingData from './portfolioOngoingData';
 import './Portfolio.css';
 
-export default function Portfolio() {
+function Portfolio() {
   function createWork(data) {
     return (
       <Work
@@ -32,3 +32,5 @@ export default function Portfolio() {
     </section>
   );
 }
+
+export default Portfolio;
