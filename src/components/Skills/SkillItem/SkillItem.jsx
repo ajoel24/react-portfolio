@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SkillItem(props) {
+function SkillItem(props) {
   return (
     <div className={'skills-item'}>
       <i
@@ -11,3 +11,5 @@ export default function SkillItem(props) {
     </div>
   );
 }
+
+export default SkillItem;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Avatar(props) {
+function Avatar(props) {
   const style = {
     borderRadius: '50%',
     border: `3px solid ${props.borderColor}`,
@@ -11,3 +11,5 @@ export default function Avatar(props) {
   };
   return <img src={props.src} alt={props.alt} style={style} />;
 }
+
+export default Avatar;

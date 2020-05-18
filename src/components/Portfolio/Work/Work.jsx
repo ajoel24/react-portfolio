@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Work(props) {
+function Work(props) {
   return (
     <div className={'portfolio-work'}>
       <h3>{props.title}</h3>
@@ -26,3 +26,5 @@ export default function Work(props) {
     </div>
   );
 }
+
+export default Work;
