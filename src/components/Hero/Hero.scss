@@ -6,28 +6,56 @@
       rgba(0, 0, 255, 0.5),
       rgba(0, 0, 255, 0.5)
     ),
-    url('../../images/compressed/hero-2.webp');
+    url('../../images/hero-3.jpg');
   background-size: cover;
   background-position: center;
 
   &-content {
     padding-top: 4rem;
     height: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
 
     &-title {
-      font-size: 1.75rem;
+      font-size: 2rem;
       font-weight: 700;
       padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    &-main {
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 2px solid #fff;
+      border-radius: 1rem;
+      min-height: 50vh;
+    }
+
+    &-image {
+      order: 2;
+      margin: auto;
+    }
+
+    &-about {
+      padding: 1.5rem;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border-right: 5px solid #fff;
+    }
+
+    &-action {
+      display: flex;
     }
 
     p {
       font-size: 1.3rem;
       padding-bottom: 1rem;
+      line-height: 1.5;
+      letter-spacing: 0.05rem;
     }
   }
 }
@@ -38,12 +66,13 @@
   padding: 1rem;
   outline: none;
   border: none;
+  margin: 1rem 1rem 0 0;
   box-shadow: 2px 4px 0 0 #000;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin: 1rem 0;
   font-family: inherit;
   font-weight: 500;
+  transition: all 0.5s ease;
 }
 
 .btn-hero {
@@ -62,7 +91,7 @@
   background-color: #5cb85c;
   color: #fff;
   i {
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem;
   }
 
   &:hover {
@@ -74,8 +103,37 @@
   .hero {
     min-height: 100vh;
 
-    &-content p {
-      font-size: 1rem;
+    &-content {
+      &-main {
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: 2px solid #fff;
+        width: 90%;
+      }
+
+      &-about {
+        display: block;
+        border: 0;
+        text-align: center;
+      }
+
+      &-image {
+        order: 0;
+        border-bottom: 2px solid #fff;
+      }
+
+      &-action {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 
