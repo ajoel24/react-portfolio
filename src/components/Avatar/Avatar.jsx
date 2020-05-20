@@ -3,7 +3,7 @@ import React from 'react';
 function Avatar(props) {
   const style = {
     borderRadius: '50%',
-    border: `3px solid ${props.borderColor}`,
+    border: `5px solid ${props.borderColor}`,
     objectFit: 'cover',
     width: props.width,
     height: props.height,

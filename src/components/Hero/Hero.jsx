@@ -9,33 +9,52 @@ function Hero() {
     <section className={'hero'}>
       <div className={'container hero-content'}>
         <h1 className={'hero-content-title'}>Hello! I'm Andrew Joel</h1>
-        <Avatar
-          src={profileImage}
-          alt="Andrew Joel profile"
-          width="200px"
-          height="200px"
-          borderColor="#fff"
-        />
+        <div className={'hero-content-main'}>
+          <div className={'hero-content-image'}>
+            <Avatar
+              src={profileImage}
+              alt="Andrew Joel profile"
+              width="200px"
+              height="200px"
+              borderColor="#fff"
+            />
+          </div>
 
-        <p>
-          I am a <strong>MERN Stack Web Developer</strong> from Chennai, India.
-          I develop beautiful, robust websites by applying latest web
-          development skills. My projects are compliant with web standards.
-        </p>
+          <div className={'hero-content-about'}>
+            <p>
+              I am a <strong>MERN Stack Web Developer</strong> from Chennai,
+              India. I develop beautiful, robust websites by applying latest web
+              development skills. My projects are compliant with web standards.
+            </p>
 
-        <ScrollIntoView selector="#portfolio" alignToTop={true} smooth={true}>
-          <button className={`btn-hero`}>
-            <i className={`fas fa-chevron-down fa-1x`} aria-hidden="true"></i>
-            Sounds Good
-          </button>
-        </ScrollIntoView>
+            <div className={'hero-content-action'}>
+              <ScrollIntoView
+                selector="#portfolio"
+                alignToTop={true}
+                smooth={true}
+              >
+                <button className={`btn-hero`}>
+                  <i
+                    className={`fas fa-chevron-down fa-1x`}
+                    aria-hidden="true"
+                  ></i>
+                  Sounds Good
+                </button>
+              </ScrollIntoView>
 
-        <ScrollIntoView selector="#contact" alignToTop={true} smooth={true}>
-          <button className={`btn-work`}>
-            <i className={`fas fa-code fa-1x`} aria-hidden="true"></i>
-            I'm available for work!
-          </button>
-        </ScrollIntoView>
+              <ScrollIntoView
+                selector="#contact"
+                alignToTop={true}
+                smooth={true}
+              >
+                <button className={`btn-work`}>
+                  <i className={`fas fa-code fa-1x`} aria-hidden="true"></i>
+                  I'm available for work!
+                </button>
+              </ScrollIntoView>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
