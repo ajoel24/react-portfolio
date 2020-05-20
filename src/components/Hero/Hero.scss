@@ -6,7 +6,7 @@
       rgba(0, 0, 255, 0.5),
       rgba(0, 0, 255, 0.5)
     ),
-    url('../../images/hero-3.jpg');
+    url('../../images/hero-3-min.jpg');
   background-size: cover;
   background-position: center;
 
@@ -104,6 +104,7 @@
     min-height: 100vh;
 
     &-content {
+      padding-bottom: 3rem;
       &-main {
         margin: auto;
         display: flex;
