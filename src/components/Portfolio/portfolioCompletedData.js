@@ -1,6 +1,6 @@
 import quizProjectImage from '../../images/compressed/portfolio/quiz-project.webp';
 import budgetSmartImage from '../../images/compressed/portfolio/budget-smart.webp';
-import nodeBlogImage from '../../images/compressed/portfolio/node-blog.webp';
+import githubFinderImage from '../../images/compressed/portfolio/github-finder.webp';
 import emojiPediaImage from '../../images/compressed/portfolio/emoji-pedia.webp';
 
 const portfolioCompletedData = [
@@ -25,12 +25,12 @@ const portfolioCompletedData = [
   },
   {
     id: 3,
-    title: 'Mini Blog',
-    image: nodeBlogImage,
-    link: 'https://github.com/Andrew2432/NodeBlog',
-    alt: 'Mini Blog project',
-    desc: 'A blog application developed using Node.js and EJS.',
-    sourceURL: 'https://github.com/Andrew2432/NodeBlog',
+    title: 'GitHub Finder',
+    image: githubFinderImage,
+    link: 'https://github-find-profiles.netlify.app/',
+    alt: 'Github Finder project',
+    desc: 'A React application to fetch and display GitHub profiles',
+    sourceURL: 'https://github.com/Andrew2432/github-finder',
   },
   {
     id: 4,
