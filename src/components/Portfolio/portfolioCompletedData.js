@@ -1,5 +1,5 @@
 import quizProjectImage from '../../images/compressed/portfolio/quiz-project.webp';
-import budgetSmartImage from '../../images/compressed/portfolio/budget-smart.webp';
+import budgetSmartImage from '../../images/compressed/portfolio/react-budgetsmart.webp';
 import githubFinderImage from '../../images/compressed/portfolio/github-finder.webp';
 import emojiPediaImage from '../../images/compressed/portfolio/emoji-pedia.webp';
 
@@ -18,10 +18,10 @@ const portfolioCompletedData = [
     id: 2,
     title: 'Budget Smart',
     image: budgetSmartImage,
-    link: 'https://budgetsmart.netlify.app/',
+    link: 'https://react-budgetsmart.netlify.app/',
     alt: 'Budget Smart home page',
-    desc: 'An expense tracker project developed using ES6 JavaScript',
-    sourceURL: 'https://github.com/Andrew2432/BudgetSmart',
+    desc: 'A React app to track your expenses, in a smart way.',
+    sourceURL: 'https://github.com/Andrew2432/react-budgetsmart',
   },
   {
     id: 3,
