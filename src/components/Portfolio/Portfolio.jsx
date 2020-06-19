@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Work from './Work/Work';
 import portfolioCompletedData from './portfolioCompletedData';
 import portfolioOngoingData from './portfolioOngoingData';
@@ -21,14 +21,22 @@ function Portfolio() {
 
   return (
     <section className={'portfolio'} id="portfolio">
-      <h2 className={'portfolio-title'}>My Completed Projects</h2>
-      <div className={'portfolio-container'}>
-        {portfolioCompletedData.map(createWork)}
-      </div>
-      <h2 className={'portfolio-title'}>My Ongoing Projects</h2>
-      <div className={'portfolio-container'}>
-        {portfolioOngoingData.map(createWork)}
-      </div>
+      {portfolioCompletedData.length > 0 && 
+        <Fragment>
+          <h2 className={'portfolio-title'}>My Completed Projects</h2>
+          <div className={'portfolio-container'}>
+            {portfolioCompletedData.map(createWork)}
+          </div>
+        </Fragment>
+      }
+      {portfolioOngoingData.length > 0 && 
+        <Fragment>
+          <h2 className={'portfolio-title'}>My Ongoing Projects</h2>
+          <div className={'portfolio-container'}>
+            {portfolioOngoingData.map(createWork)}
+          </div>
+        </Fragment>
+      }
     </section>
   );
 }

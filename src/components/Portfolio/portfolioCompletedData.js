@@ -1,7 +1,7 @@
 import quizProjectImage from '../../images/compressed/portfolio/quiz-project.webp';
 import budgetSmartImage from '../../images/compressed/portfolio/react-budgetsmart.webp';
 import githubFinderImage from '../../images/compressed/portfolio/github-finder.webp';
-import emojiPediaImage from '../../images/compressed/portfolio/emoji-pedia.webp';
+import keeperAppImage from '../../images/compressed/portfolio/react-keeperapp.webp';
 
 const portfolioCompletedData = [
   {
@@ -34,12 +34,12 @@ const portfolioCompletedData = [
   },
   {
     id: 4,
-    title: 'Emojipedia',
-    image: emojiPediaImage,
-    link: 'https://emojireactapp.netlify.app/',
-    alt: 'EmojiPedia project',
-    desc: 'My first React application to denote the meaning of emojis',
-    sourceURL: 'https://github.com/Andrew2432/emojipedia',
+    title: 'KeeperApp',
+    image: keeperAppImage,
+    link: 'https://react-keeperapp.netlify.app/',
+    alt: 'KeeperApp project',
+    desc: 'A React application to implement Google keep like notes',
+    sourceURL: 'https://github.com/Andrew2432/react-keeperapp',
   },
 ];
 
