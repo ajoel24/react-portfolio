@@ -1,3 +1,4 @@
+import secretStashImage from '../../images/compressed/portfolio/secret-stash.webp';
 import quizProjectImage from '../../images/compressed/portfolio/quiz-project.webp';
 import budgetSmartImage from '../../images/compressed/portfolio/react-budgetsmart.webp';
 import githubFinderImage from '../../images/compressed/portfolio/github-finder.webp';
@@ -6,6 +7,16 @@ import keeperAppImage from '../../images/compressed/portfolio/react-keeperapp.we
 const portfolioCompletedData = [
   {
     id: 1,
+    title: 'Secret Stash',
+    image: secretStashImage,
+    link: 'https://secret-stash.herokuapp.com',
+    alt: 'Secret Stash home page',
+    desc: 'A full stack application to share user secrets anonymously.',
+    sourceURL: 'https://github.com/Andrew2432/secret-stash-node-materialize',
+  },
+
+  {
+    id: 2,
     title: 'Quiz Project',
     image: quizProjectImage,
     link: 'https://quizproject.netlify.app',
@@ -15,7 +26,7 @@ const portfolioCompletedData = [
     sourceURL: 'https://github.com/Andrew2432/Quiz-API-Project',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Budget Smart',
     image: budgetSmartImage,
     link: 'https://react-budgetsmart.netlify.app/',
@@ -24,7 +35,7 @@ const portfolioCompletedData = [
     sourceURL: 'https://github.com/Andrew2432/react-budgetsmart',
   },
   {
-    id: 3,
+    id: 4,
     title: 'GitHub Finder',
     image: githubFinderImage,
     link: 'https://github-find-profiles.netlify.app/',
@@ -33,7 +44,7 @@ const portfolioCompletedData = [
     sourceURL: 'https://github.com/Andrew2432/github-finder',
   },
   {
-    id: 4,
+    id: 5,
     title: 'KeeperApp',
     image: keeperAppImage,
     link: 'https://react-keeperapp.netlify.app/',
